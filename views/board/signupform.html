@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>솜's 1st 웹페이지</title>
+<link rel="stylesheet"  href="/javaStudy/workspace_front/mysite/assets/css/mysite.css">
+<link rel="stylesheet"  href="/javaStudy/workspace_front/mysite/assets/css/signup.css">
+</head>
+<body>
+<div id="wrap">
+	<div id="header" class="clearfix">
+		<h1><a href="../main/index.html">Mysite</a></h1>
+		<ul class="clearfix"> 
+			<li><a href="">로그인</a></li>
+			<li><a href="./signupform.html">회원가입</a></li>
+		</ul>
+	</div>
+	<!-- //header -->
+
+	<div id="nav">
+		<ul class="clearfix">
+			<li><a href="">입사지원서</a></li>
+			<li><a href="./list.html">게시판</a></li>
+			<li><a href="">갤러리</a></li>
+			<li><a href="">방명록</a></li>
+		</ul>
+	</div>
+	<!-- //nav -->
+	
+	<form action="" method="get">
+		<div id="contents" class="clearfix">
+			<div id="aside">
+				<h2>회원</h2>
+			
+				<ul>
+					<li><a href="./signupform.html">회원가입</a></li>
+					<li><a href="">아이디/패스워드찾기</a></li>
+					<li><a href="">회원정보보기</a></li>
+					<li><a href="">회원정보수정</a></li>
+				</ul>
+			</div>
+		<!-- //aside -->
+		
+			<div id="main-content" class="clearfix">
+				<div id="main-content-header">
+					<h3>회원가입</h3>
+					<ol>
+						<li>홈</li>
+						<li>회원</li>
+						<li id="root-last">회원가입</li>
+					</ol>
+				</div>
+				<!-- main-content-header -->
+				
+				<div id="main-content-body">
+					<!-- 아이디 -->
+					<div class="form-group">
+						<label class="form-title" for="signup-id">아이디</label>
+						<input id="signup-id" type="text" name="user-id" placeholder="아이디를 입력하세요">
+					</div>
+					
+					<!-- 비밀번호 -->
+					<div class="form-group">
+						<label class="form-title" for="signup-password">비밀번호</label>
+						<input id="signup-password" type="password" name="user-password"  placeholder="비밀번호를 입력하세요">
+					</div>
+					
+					<!-- 이름 -->
+					<div class="form-group">
+						 <label class="form-title" for="signup-name">이름</label>
+						 <input id="signup-name" type="text" name="user-name"  placeholder="이름을 입력하세요">
+					</div>
+					
+					<!-- 프로필 사진 -->
+					<div class="form-group">
+						<label class="form-title">프로필사진</label>
+						<input type="file">
+					</div>
+					
+					<!-- 주소 -->
+					<div class="form-group">
+						<label class="form-title clearfix" for="signup-address">주소</label>
+						<input id="postcode" type="text" name="user-postcode" placeholder="우편번호">
+						<button id="search-postcode" type="button">우편번호찾기</button>
+					</div>
+					<div class="form-group">
+						<input id="signup-address" type="text" name="user-address" placeholder="주소">
+					</div>
+		
+		 			<!-- 통신사 -->
+		 			<div class="form-group">
+						<label class="form-title" for="sel-telecom">이동통신사</label>
+						<select id="sel-telecom" name="telecom">
+							<option value="" selected="selected">선택해 주세요</option>
+							<option value="SKT">SKT</option>
+							<option value="KT">KT</option>
+							<option value="LGU+">LGU+</option>
+							<option value="etc">기타</option>
+						</select>
+					</div>
+					
+					<!-- 나이 -->
+					<div class="form-group">
+						<span class="form-title">나이</span>
+						<label for="a10">10대</label>
+						<input id="a10" type="radio" name="user-age" value="10">
+						<label for="a20">20대</label>
+						<input id="a20" type="radio" name="user-age" value="20" checked="checked">
+						<label for="a30">30대</label>
+						<input id="a30" type="radio" name="user-age" value="30">
+						<label for="a30">40대</label>
+						<input id="a40" type="radio" name="user-age" value="40">
+						<label for="aetc">기타</label>
+						<input id="aetc" type="radio" name="user-age" value="etc">
+					</div>
+					
+					<!-- 취미 -->
+					<div class="form-group">
+						<span class="form-title">취미</span>
+						<label for="h01">독서</label>
+						<input id="h01" type="checkbox" name="hobby" value="reading" checked="checked">
+						<label for="h02">음악</label>
+						<input id="h02" type="checkbox" name="hobby" value="music">
+						<label for="h03">여행</label>
+						<input id="h03" type="checkbox" name="hobby" value="trip">
+						<label for="h03">영화</label>
+						<input id="h03" type="checkbox" name="hobby" value="movie">
+						<label for="h03">코딩</label>
+						<input id="h03" type="checkbox" name="hobby" value="coding">
+						<label for="h03">기타</label>
+						<input id="h03" type="checkbox" name="hobby" value="etc">
+					</div>
+						
+					<!-- 자기소개 -->
+					<div class="form-group" >
+						<label class="form-title" for="signup-pr">자기소개</label>
+						<textarea id="signup-pr"></textarea>
+					</div>				
+								
+				</div>
+				<div id="main-content-footer">
+					<button class="btn">등록</button>
+					<button class="btn">초기화</button>
+				</div>
+				<!-- //form-footer -->
+			
+			</div>
+			<!--main-content -->
+		</div>
+		<!-- //contents -->
+		
+	</form>
+
+	<div id="footer">
+		Copyright ⓒ 2022 SOM2, All right's reserved
+	</div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+</body>
+</html>

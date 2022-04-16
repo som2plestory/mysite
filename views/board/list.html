@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>솜's 1st 웹페이지</title>
+<link rel="stylesheet"  href="/javaStudy/workspace_front/mysite/assets/css/mysite.css">
+<link rel="stylesheet"  href="/javaStudy/workspace_front/mysite/assets/css/board.css">
+
+
+</head>
+<body>
+
+<div id="wrap">
+	<div id="header" class="clearfix">
+		<h1><a href="../main/index.html">Mysite</a></h1>
+		<ul class="clearfix"> 
+			<li><a href="">로그인</a></li>
+			<li><a href="./signupform.html">회원가입</a></li>
+		</ul>
+	</div>
+	<!-- //header -->
+
+	<div id="nav">
+		<ul class="clearfix">
+			<li><a href="">입사지원서</a></li>
+			<li><a href="./list.html">게시판</a></li>
+			<li><a href="">갤러리</a></li>
+			<li><a href="">방명록</a></li>
+		</ul>
+	</div>
+	<!-- //nav -->
+
+
+	<div id="contents" class="clearfix">
+		<div id="aside">
+			<h2>게시판</h2>
+		
+			<ul>
+				<li><a href="./list.html">일반게시판</a></li>
+				<li><a href="">댓글게시판</a></li>
+				<li><a href="">첨부게시판</a></li>
+			</ul>
+		</div>
+		<!-- //aside -->
+		
+		<div id="main-content">
+			<div id="main-content-header">
+				<h3>일반게시판</h3>
+				<ol>
+					<li>홈</li>
+					<li>게시판</li>
+					<li id="root-last">일반게시판</li>
+				</ol>
+			</div>
+			<!-- //main-content-header -->
+			<div id="search" class="clearfix">
+				<textarea></textarea>
+				<button class="btn" type="submit">검색</button>
+			</div>
+			<!-- //main-content-search -->
+			<table>
+				<colgroup>	
+					<col style="width: 100px;">
+	                <col style="width: 250px;">
+	                <col style="width: 150px;">
+	                <col style="width: 120px;">
+	                <col style="width: 120px;">
+	                <col style="width: 100px;">
+	            </colgroup>
+	            <thead>
+	            	<tr>
+	            		<th>번호</th>
+	            		<th>제목</th>
+	            		<th>글쓴이</th>
+	            		<th>조회수</th>
+	            		<th>작성일</th>
+	            		<th></th>
+	            	</tr>
+	            </thead>
+	            <tbody>
+	            	<tr>
+	            		<td>1001</td>
+	            		<td><a href="">안녕하세요</a></td>
+	            		<td>LEEJEEHEE</td>
+	            		<td>213244</td>
+	            		<td>20220331</td>
+	            		<td><a href="" target="_blank">삭제</a></td>
+	            	</tr>
+	            	<tr>
+	            		<td>1002</td>
+	            		<td><a href="">처음뵙겠습니다</a></td>
+	            		<td>Eli</td>
+	            		<td>70129</td>
+	            		<td>20220401</td>
+	            		<td><a href="" target="_blank">삭제</a></td>
+	            	</tr>
+	            	<tr>
+	            		<td>1003</td>
+	            		<td><a href="">솜이입니다</a></td>
+	            		<td>SOM2</td>
+	            		<td>2223415</td>
+	            		<td>20220402</td>
+	            		<td><a href="" target="_blank">삭제</a></td>
+	            	</tr>
+	            	<tr>
+	            		<td>1004</td>
+	            		<td><a href="">잘부탁드립니다</a></td>
+	            		<td>우기</td>
+	            		<td>1004591</td>
+	            		<td>20220403</td>
+	            		<td><a href="" target="_blank">삭제</a></td>
+	            	</tr>
+	            	<tr>
+	            		<td>1005</td>
+	            		<td><a href="">안녕히계세요</a></td>
+	            		<td>슈화</td>
+	            		<td>1004480</td>
+	            		<td>20220404</td>
+	            		<td><a href="" target="_blank">삭제</a></td>
+	            	</tr>
+	            </tbody>
+			</table>
+			<!-- //main-content-table -->
+			<div id="page">
+				<p>
+					<a href="">◀</a>
+					<a href="">1</a>
+					<a href="">2</a>
+					<a href="">3</a>
+					<a href="">4</a>
+					<a href="">5</a>
+					<a href="">6</a>
+					<a href="">7</a>
+					<a href="">8</a>
+					<a href="">9</a>
+					<a href="">10</a>
+					<a href="">▶</a>
+				</p>
+			</div>
+			<div id="write">
+				<a href="./writeForm.html">
+					<button class="btn" type="submit">글쓰기</button>
+				</a>
+			</div>
+		</div>	
+		<!-- //main-content -->
+	
+	
+	</div>
+	<!-- //contents -->
+
+	<div id="footer">
+		Copyright ⓒ 2022 SOM2, All rights reserved
+	</div>
+	<!-- //footer -->
+</div>
+<!-- //wrap -->
+
+</body>
+</html>
